@@ -28,8 +28,8 @@ const Quote = ({ bg, quote, writer, size }: Props) => {
 	};
 
 	return (
-		<div className="w-full flex-1 flex flex-col gap-4 p-8 bg-white shadow-md rounded-xl">
-			<div className="orientations flex items-center gap-2">
+		<div className="w-full bg-white/50 flex-1 flex justify-center flex-col gap-4 p-8 md:bg-white shadow-md rounded-xl">
+			<div className="orientations flex items-center md:justify-start justify-center gap-2">
 				{orientations.map((o) => (
 					<button
 						key={o.label}
@@ -43,7 +43,7 @@ const Quote = ({ bg, quote, writer, size }: Props) => {
 			</div>
 			<div
 				ref={quoteRef}
-				className={`quote-image w-[400px] h-[400px] text-gray-100  flex p-6 text-2xl font-semibold  items-start justify-center flex-col gap-4 ${
+				className={`scale-75 md:scale-100  quote-image w-[400px] h-[400px] text-gray-100  flex p-6 text-2xl font-semibold  items-start justify-center flex-col gap-4 ${
 					size === "small"
 						? "text-xl"
 						: size === "medium"
