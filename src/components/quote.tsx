@@ -22,7 +22,7 @@ const Quote = ({ bg, quote, writer, size }: Props) => {
 	const handleDownload = () => {
 		if (!quoteRef.current) return;
 
-		htmlToImage.toBlob(quoteRef.current).then(function (blob) {
+		htmlToImage.toBlob(quoteRef.current).then(function (blob: any) {
 			saveAs(blob, "quote.png");
 		});
 	};
