@@ -37,7 +37,7 @@ export default function Home() {
 							onChange={(e) => setQuote(e.target.value)}
 							name=""
 							id=""
-							row={2}
+							rows={2}
 							className="bg  bg-transparent border-2 rounded-md border-zinc-300 p-2 "></textarea>
 
 						<div className="flex  items-center">
