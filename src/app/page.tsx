@@ -31,7 +31,6 @@ export default function Home() {
 								<Sparkles size={16} /> Generate AI Quote
 							</button>
 						</label>
-
 						<textarea
 							value={quote}
 							onChange={(e) => setQuote(e.target.value)}
@@ -39,7 +38,6 @@ export default function Home() {
 							id=""
 							rows={2}
 							className="bg  bg-transparent border-2 rounded-md border-zinc-300 p-2 "></textarea>
-
 						<div className="flex  items-center">
 							<div className="flex text-xs border border-zinc-400  cursor-pointer rounded-full capitalize overflow-hidden font-medium">
 								<div
@@ -80,6 +78,7 @@ export default function Home() {
 							onChange={(e) => setWriter(e.target.value)}
 							className="bg  bg-transparent border-2 rounded-md border-zinc-300 p-2 "></input>
 						<br />
+
 						<div className="flex gap-3">
 							<div className="w-12 h-12 rounded-md   hover:scale-110   relative overflow-hidden">
 								<input
