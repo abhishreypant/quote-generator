@@ -11,7 +11,7 @@ export default function Home() {
 
 	const [selected, setSelected] = useState("medium");
 
-	const handleClick = (size) => {
+	const handleClick = (size: string) => {
 		setSelected(size);
 	};
 	467800;
@@ -37,7 +37,7 @@ export default function Home() {
 							onChange={(e) => setQuote(e.target.value)}
 							name=""
 							id=""
-							row={1}
+							row={2}
 							className="bg  bg-transparent border-2 rounded-md border-zinc-300 p-2 "></textarea>
 
 						<div className="flex  items-center">
